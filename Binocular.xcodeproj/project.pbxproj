@@ -12,6 +12,8 @@
 		EF7C583B2218915000DD17F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7C58392218915000DD17F2 /* Main.storyboard */; };
 		EF7C583D2218915200DD17F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7C583C2218915200DD17F2 /* Assets.xcassets */; };
 		EF7C58402218915200DD17F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7C583E2218915200DD17F2 /* LaunchScreen.storyboard */; };
+		EF7C584A221899C900DD17F2 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7C5848221899C900DD17F2 /* AlamofireImage.framework */; };
+		EF7C584B221899C900DD17F2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7C5849221899C900DD17F2 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		EF7C583C2218915200DD17F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF7C583F2218915200DD17F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF7C58412218915200DD17F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7C5848221899C900DD17F2 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		EF7C5849221899C900DD17F2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7C584A221899C900DD17F2 /* AlamofireImage.framework in Frameworks */,
+				EF7C584B221899C900DD17F2 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 			children = (
 				EF7C58342218915000DD17F2 /* Binocular */,
 				EF7C58332218915000DD17F2 /* Products */,
+				EF7C5847221899C900DD17F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,15 @@
 			path = Binocular;
 			sourceTree = "<group>";
 		};
+		EF7C5847221899C900DD17F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C5849221899C900DD17F2 /* Alamofire.framework */,
+				EF7C5848221899C900DD17F2 /* AlamofireImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +90,7 @@
 				EF7C582E2218915000DD17F2 /* Sources */,
 				EF7C582F2218915000DD17F2 /* Frameworks */,
 				EF7C58302218915000DD17F2 /* Resources */,
+				EF7C584C22189A5D00DD17F2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +146,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EF7C584C22189A5D00DD17F2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF7C582E2218915000DD17F2 /* Sources */ = {
@@ -284,6 +323,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 725U25672W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Binocular/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +345,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 725U25672W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Binocular/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
