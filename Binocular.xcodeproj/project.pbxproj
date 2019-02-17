@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C93BBC1B1E11929D2C4B2FB0 /* Pods_Binocular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A0FF184B3492E1C82E3096 /* Pods_Binocular.framework */; };
+		EF08610D221918D400141CA9 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF08610B221918D400141CA9 /* StoryTableViewCell.swift */; };
+		EF0861142219562E00141CA9 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0861132219562E00141CA9 /* Story.swift */; };
+		EF32EE662218E35A0071DA67 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF32EE652218E35A0071DA67 /* Line.swift */; };
 		EF7C58362218915000DD17F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C58352218915000DD17F2 /* AppDelegate.swift */; };
 		EF7C58382218915000DD17F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C58372218915000DD17F2 /* ViewController.swift */; };
 		EF7C583B2218915000DD17F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7C58392218915000DD17F2 /* Main.storyboard */; };
 		EF7C583D2218915200DD17F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7C583C2218915200DD17F2 /* Assets.xcassets */; };
 		EF7C58402218915200DD17F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7C583E2218915200DD17F2 /* LaunchScreen.storyboard */; };
-		EF7C584A221899C900DD17F2 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7C5848221899C900DD17F2 /* AlamofireImage.framework */; };
-		EF7C584B221899C900DD17F2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7C5849221899C900DD17F2 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041552E26EF7990869B2C0AF /* Pods-Binocular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binocular.release.xcconfig"; path = "Target Support Files/Pods-Binocular/Pods-Binocular.release.xcconfig"; sourceTree = "<group>"; };
+		134A681F2F7123D58F6951E7 /* Pods-Binocular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binocular.debug.xcconfig"; path = "Target Support Files/Pods-Binocular/Pods-Binocular.debug.xcconfig"; sourceTree = "<group>"; };
+		33A0FF184B3492E1C82E3096 /* Pods_Binocular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binocular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF08610B221918D400141CA9 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		EF0861132219562E00141CA9 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		EF32EE652218E35A0071DA67 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		EF7C58322218915000DD17F2 /* Binocular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Binocular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7C58352218915000DD17F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF7C58372218915000DD17F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +32,6 @@
 		EF7C583C2218915200DD17F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF7C583F2218915200DD17F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF7C58412218915200DD17F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF7C5848221899C900DD17F2 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
-		EF7C5849221899C900DD17F2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,20 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF7C584A221899C900DD17F2 /* AlamofireImage.framework in Frameworks */,
-				EF7C584B221899C900DD17F2 /* Alamofire.framework in Frameworks */,
+				C93BBC1B1E11929D2C4B2FB0 /* Pods_Binocular.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69BD626A2E7208A6FB3156EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				134A681F2F7123D58F6951E7 /* Pods-Binocular.debug.xcconfig */,
+				041552E26EF7990869B2C0AF /* Pods-Binocular.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EF7C58292218915000DD17F2 = {
 			isa = PBXGroup;
 			children = (
 				EF7C58342218915000DD17F2 /* Binocular */,
 				EF7C58332218915000DD17F2 /* Products */,
 				EF7C5847221899C900DD17F2 /* Frameworks */,
+				69BD626A2E7208A6FB3156EE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,9 @@
 				EF7C583C2218915200DD17F2 /* Assets.xcassets */,
 				EF7C583E2218915200DD17F2 /* LaunchScreen.storyboard */,
 				EF7C58412218915200DD17F2 /* Info.plist */,
+				EF32EE652218E35A0071DA67 /* Line.swift */,
+				EF08610B221918D400141CA9 /* StoryTableViewCell.swift */,
+				EF0861132219562E00141CA9 /* Story.swift */,
 			);
 			path = Binocular;
 			sourceTree = "<group>";
@@ -74,8 +92,7 @@
 		EF7C5847221899C900DD17F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EF7C5849221899C900DD17F2 /* Alamofire.framework */,
-				EF7C5848221899C900DD17F2 /* AlamofireImage.framework */,
+				33A0FF184B3492E1C82E3096 /* Pods_Binocular.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,10 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF7C58442218915200DD17F2 /* Build configuration list for PBXNativeTarget "Binocular" */;
 			buildPhases = (
+				550D130498A9915C0D76D0BF /* [CP] Check Pods Manifest.lock */,
 				EF7C582E2218915000DD17F2 /* Sources */,
 				EF7C582F2218915000DD17F2 /* Frameworks */,
 				EF7C58302218915000DD17F2 /* Resources */,
-				EF7C584C22189A5D00DD17F2 /* ShellScript */,
+				5EFD9E0C484B2A90DA3EEDC3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,7 +166,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		EF7C584C22189A5D00DD17F2 /* ShellScript */ = {
+		550D130498A9915C0D76D0BF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -156,16 +174,45 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Binocular-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EFD9E0C484B2A90DA3EEDC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Binocular/Pods-Binocular-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Binocular/Pods-Binocular-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -174,8 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF32EE662218E35A0071DA67 /* Line.swift in Sources */,
 				EF7C58382218915000DD17F2 /* ViewController.swift in Sources */,
 				EF7C58362218915000DD17F2 /* AppDelegate.swift in Sources */,
+				EF08610D221918D400141CA9 /* StoryTableViewCell.swift in Sources */,
+				EF0861142219562E00141CA9 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +288,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -299,6 +350,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -319,13 +371,14 @@
 		};
 		EF7C58452218915200DD17F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 134A681F2F7123D58F6951E7 /* Pods-Binocular.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 725U25672W;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Binocular/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -341,13 +394,14 @@
 		};
 		EF7C58462218915200DD17F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 041552E26EF7990869B2C0AF /* Pods-Binocular.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 725U25672W;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Binocular/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (5.0.0-beta.2)
+  - MaterialComponents/Cards (77.0.0):
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Icons/ic_check_circle
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Shapes
+  - MaterialComponents/Ink (77.0.0):
+    - MaterialComponents/private/Math
+  - MaterialComponents/private/Icons/Base (77.0.0)
+  - MaterialComponents/private/Icons/ic_check_circle (77.0.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Math (77.0.0)
+  - MaterialComponents/ShadowElevations (77.0.0)
+  - MaterialComponents/ShadowLayer (77.0.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Shapes (77.0.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - SnapKit (4.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-beta.2)
+  - MaterialComponents/Cards
+  - SnapKit (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - MaterialComponents
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: d1e5493588babe3e7b56ae29e8032942f4de09fe
+  MaterialComponents: 1dc805d52502bd9d5692c2ffcc8a169c8b65b916
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+
+PODFILE CHECKSUM: bdbcf4d0072fbc8e4170e6121d0c4f232229a8d5
+
+COCOAPODS: 1.6.0
