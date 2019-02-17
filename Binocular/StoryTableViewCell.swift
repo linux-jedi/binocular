@@ -13,6 +13,7 @@ import MaterialComponents.MaterialCards
 
 class StoryTableViewCell: UITableViewCell {
   
+  var card: MDCCard!
   var categoryLabel: UILabel!
   var headlineLabel: UILabel!
   var storyImageView: UIImageView!
@@ -21,14 +22,15 @@ class StoryTableViewCell: UITableViewCell {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     
     // Make card
-    let card = MDCCard()
+    card = MDCCard()
+    card.backgroundColor = UIColor.white
     
     self.addSubview(card)
     card.snp.makeConstraints { (make) in
-      make.top.equalToSuperview().offset(20)
-      make.left.equalToSuperview()
-      make.bottom.equalToSuperview().offset(-20)
-      make.right.equalToSuperview()
+      make.top.equalTo(self.snp.top).offset(20)
+      make.left.equalTo(self.snp.left)
+      make.bottom.equalTo(self.snp.bottom).offset(-20)
+      make.right.equalTo(self.snp.right)
     }
     
     // image
@@ -37,19 +39,20 @@ class StoryTableViewCell: UITableViewCell {
     storyImageView.layer.cornerRadius = 6.0
     storyImageView.contentMode = .scaleAspectFill
     storyImageView.clipsToBounds = true
+    storyImageView.backgroundColor = UIColor.clear
     
     // category label
     categoryLabel = UILabel()
     categoryLabel.frame = CGRect(x: 0, y: 0, width: 50, height: 40)
     categoryLabel.font = UIFont.systemFont(ofSize: 16.0)
-    categoryLabel.textColor = UIColor(red: 169, green: 171, blue: 181, alpha: 1.0)
+    categoryLabel.textColor = UIColor(red: 233/255.0, green: 244/255.0, blue: 236/255.0, alpha: 1.0)
     categoryLabel.backgroundColor = UIColor.clear
     
     // headline label
     headlineLabel = UILabel()
     headlineLabel.frame = CGRect(x: 0, y: 0, width: 50, height: 60)
     headlineLabel.font = UIFont.systemFont(ofSize: 18.0)
-    headlineLabel.textColor = UIColor(red: 4, green: 5, blue: 10, alpha: 1.0)
+    headlineLabel.textColor = UIColor(red: 4/255.0, green: 5/255.0, blue: 10/255.0, alpha: 1.0)
     headlineLabel.lineBreakMode = .byWordWrapping
     headlineLabel.numberOfLines = 3
     headlineLabel.backgroundColor = UIColor.clear
@@ -57,24 +60,26 @@ class StoryTableViewCell: UITableViewCell {
     card.addSubview(categoryLabel)
     card.addSubview(headlineLabel)
     card.addSubview(storyImageView)
+    card.backgroundColor = UIColor.clear
     
     storyImageView.snp.makeConstraints({ make in
       make.top.equalTo(card.snp.top).offset(10)
       make.bottom.equalTo(card.snp.bottom).offset(-10)
-      make.right.equalTo(card.snp.right).offset(-5)
       make.width.equalTo(storyImageView.snp.height)
+      make.right.equalTo(card.snp.right).offset(-10)
     })
     
     categoryLabel.snp.makeConstraints({make in
-      make.left.equalTo(card.snp.left) //.offset(-5)
+      make.left.equalTo(card.snp.left).offset(-5)
       make.right.equalTo(card.snp.left).offset(-5)
-      make.top.equalTo(card.snp.top) //.offset(-10)
+      make.top.equalTo(card.snp.top)
+      make.bottom.equalTo(headlineLabel.snp.top)
     })
     
     headlineLabel.snp.makeConstraints({make in
-      make.left.equalTo(categoryLabel.snp.left)
+      make.left.equalTo(categoryLabel.snp.left).offset(5)
       make.right.equalTo(storyImageView.snp.left).offset(-5)
-      make.top.equalTo(categoryLabel.snp.bottom).offset(-5)
+      make.top.equalTo(categoryLabel.snp.bottom).offset(5)
     })
     
   }

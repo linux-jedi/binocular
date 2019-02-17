@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZh-6D-Ah1">
+                            <scrollView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZh-6D-Ah1">
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7N-d5-LkZ">
@@ -30,18 +30,6 @@
                                                 <color key="separatorColor" red="0.66274509800000003" green="0.6705882353" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="sectionIndexColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="sectionIndexBackgroundColor" red="0.91372549020000005" green="0.91764705879999997" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="pn6-Iy-YCo" customClass="StoryTableViewCell" customModule="Binocular" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="28" width="359" height="140"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pn6-Iy-YCo" id="O4P-nC-ZXa">
-                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="140"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <color key="backgroundColor" red="0.91372549020000005" green="0.91764705879999997" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </tableViewCellContentView>
-                                                        <color key="backgroundColor" red="0.91372549020000005" green="0.91764705879999997" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </tableViewCell>
-                                                </prototypes>
                                             </tableView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Uk-oX-AOF">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="475.33333333333331"/>

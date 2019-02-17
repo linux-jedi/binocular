@@ -24,30 +24,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     cardTable.register(StoryTableViewCell.self, forCellReuseIdentifier: "StoryTableViewCell")
-    
+        
     // set the date as today
     setDate()
     
     // setup table delegate
     cardTable.delegate = self
     cardTable.dataSource = self
-    cardTable.backgroundColor = UIColor(red: 233, green: 234, blue: 236, alpha: 1.0)
-    cardTable.backgroundView?.backgroundColor = UIColor(red: 233, green: 234, blue: 236, alpha: 1.0)
-    
-    self.navigationController?.view.backgroundColor = UIColor(red: 233, green: 234, blue: 236, alpha: 1.0)
-    
+        
     // get headline and build card
     let categoryText = "U.S."
     let categoryLabel = UILabel()
     categoryLabel.font = UIFont.systemFont(ofSize: 16.0)
     categoryLabel.text = String(categoryText)
-    categoryLabel.textColor = UIColor(red: 223, green: 234, blue: 236, alpha: 1.0)
+    categoryLabel.textColor = UIColor(red: 223/255.0, green: 234/255.0, blue: 236/255.0, alpha: 1.0)
     
     let headlineText = "Trump Declares National Emergency for Border Wall"
     let headlineLabel = UILabel()
     headlineLabel.font = UIFont.boldSystemFont(ofSize: 24.0)
     headlineLabel.text = String(headlineText)
-    headlineLabel.textColor = UIColor(red: 223, green: 234, blue: 236, alpha: 1.0)
+    headlineLabel.textColor = UIColor(red: 223/255.0, green: 234/255.0, blue: 236/255.0, alpha: 1.0)
     headlineLabel.lineBreakMode = .byWordWrapping
     headlineLabel.numberOfLines = 2
     
@@ -152,21 +148,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     cell.categoryLabel.text = String(story.category)
     cell.headlineLabel.text = String(story.title)
     cell.storyImageView.image = story.image
-    
-    cell.backgroundColor = UIColor.clear
-    cell.contentView.backgroundColor = UIColor.clear
-    cell.textLabel?.backgroundColor = UIColor.clear
-    
-    tableView.backgroundView = nil
-    tableView.backgroundColor = UIColor(red: 223, green: 234, blue: 236, alpha: 1.0)
-    
+    cell.backgroundColor = UIColor(red: 233/255.0, green: 244/255.0, blue: 236/255.0, alpha: 1.0)
+    cell.card.backgroundColor = UIColor.white
+        
     return cell
   }
   
   func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
     cell.backgroundColor = UIColor.clear
     tableView.backgroundView = nil
-    tableView.backgroundColor = UIColor(red: 223, green: 234, blue: 236, alpha: 1.0)
+    tableView.backgroundColor = UIColor.clear
   }
 
 }
